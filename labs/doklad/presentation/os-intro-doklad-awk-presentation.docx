@@ -1,0 +1,152 @@
+\section{Информация}\label{ux438ux43dux444ux43eux440ux43cux430ux446ux438ux44f}
+
+\begin{frame}{Докладчик}
+\protect\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Пинтаев Максар Баирович
+\item
+  студент
+\item
+  Российский университет дружбы народов им. П. Лумумбы
+\item
+  \href{mailto:1032253534@pfur.ru}{\nolinkurl{1032253534@pfur.ru}}
+\item
+  \url{https://github.com/maksar-lab}
+\end{itemize}
+\end{frame}
+
+\section{Вводная
+часть}\label{ux432ux432ux43eux434ux43dux430ux44f-ux447ux430ux441ux442ux44c}
+
+\begin{frame}[fragile]{Актуальность}
+\protect\phantomsection\label{ux430ux43aux442ux443ux430ux43bux44cux43dux43eux441ux442ux44c}
+\begin{itemize}
+\tightlist
+\item
+  Современный IT-специалист ежедневно работает с текстовыми данными
+\item
+  Лог-файлы, CSV, конфигурации требуют быстрой обработки
+\item
+  \texttt{awk} --- мощный и эффективный инструмент для этих задач
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Цель и задачи}
+\protect\phantomsection\label{ux446ux435ux43bux44c-ux438-ux437ux430ux434ux430ux447ux438}
+\textbf{Цель:} Изучить возможности утилиты \texttt{awk} для обработки
+текстовых файлов.
+
+\textbf{Задачи:} 1. Рассмотреть синтаксис и основные конструкции
+\texttt{awk} 2. Разработать практические примеры обработки данных 3.
+Продемонстрировать эффективность \texttt{awk}
+\end{frame}
+
+\begin{frame}{Материалы и методы}
+\protect\phantomsection\label{ux43cux430ux442ux435ux440ux438ux430ux43bux44b-ux438-ux43cux435ux442ux43eux434ux44b}
+\begin{itemize}
+\tightlist
+\item
+  Операционная система: Fedora Sway
+\item
+  GNU Awk 5.x
+\item
+  Тестовые данные: логи, CSV, числовые файлы
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/01-awk-version.png}
+\caption{Версия GNU Awk}
+\end{figure}
+\end{frame}
+
+\section{Содержание
+исследования}\label{ux441ux43eux434ux435ux440ux436ux430ux43dux438ux435-ux438ux441ux441ux43bux435ux434ux43eux432ux430ux43dux438ux44f}
+
+\begin{frame}[fragile]{Что такое awk?}
+\protect\phantomsection\label{ux447ux442ux43e-ux442ux430ux43aux43eux435-awk}
+\begin{itemize}
+\tightlist
+\item
+  Утилита командной строки для обработки текстовых файлов
+\item
+  Язык программирования для работы со структурированными данными
+\item
+  Синтаксис:
+  \texttt{awk\ \textquotesingle{}условие\ \{действие\}\textquotesingle{}\ файл}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Базовый синтаксис}
+\protect\phantomsection\label{ux431ux430ux437ux43eux432ux44bux439-ux441ux438ux43dux442ux430ux43aux441ux438ux441}
+\begin{itemize}
+\tightlist
+\item
+  Строки автоматически разбиваются на поля
+\item
+  \texttt{\$1}, \texttt{\$2}, \ldots{} --- доступ к полям
+\item
+  \texttt{\$0} --- вся строка целиком
+\item
+  \texttt{NR} --- номер строки
+\item
+  \texttt{NF} --- количество полей
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Пример 1. Фильтрация строк}
+\protect\phantomsection\label{ux43fux440ux438ux43cux435ux440-1.-ux444ux438ux43bux44cux442ux440ux430ux446ux438ux44f-ux441ux442ux440ux43eux43a}
+Вывод только строк, содержащих ошибку:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/02-filter-errors.png}
+\caption{Вывод}
+\end{figure}
+
+Пример 2. Суммирование данных Подсчёт суммы чисел в первом столбце:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/03-sum-column.png}
+\caption{Подсчет}
+\end{figure}
+
+Пример 3. Форматированный вывод Вывод с выравниванием:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/04-printf-format.png}
+\caption{Вывод}
+\end{figure}
+
+Пример 4. Обработка CSV Использование разделителя-запятой:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/05-csv-processing.png}
+\caption{Использование}
+\end{figure}
+
+Пример 5. Сложные условия Выбор строк по условию:
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{../report/screenshots/06-multi-condition.png}
+\caption{Выбор}
+\end{figure}
+
+Анализ эффективности Преимущества awk Скорость: потоковая обработка, не
+требует загрузки всего файла в память Простота: компактный синтаксис для
+распространённых задач Гибкость: легко встраивается в конвейеры команд
+
+Заключение Выводы awk --- мощный инструмент для обработки текстовых
+данных Позволяет решать широкий круг задач: фильтрация, суммирование,
+форматирование Значительно повышает эффективность работы с текстовыми
+файлами
+
+Перспективы Изучение встроенных функций awk Использование в сценариях
+системного администрирования Интеграция с grep, sed, sort
+\end{frame}

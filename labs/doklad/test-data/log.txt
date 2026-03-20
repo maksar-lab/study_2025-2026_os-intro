@@ -1,0 +1,5 @@
+2024-01-15 10:15:30 ERROR Connection failed
+2024-01-15 10:16:22 INFO User logged in
+2024-01-15 10:17:05 ERROR Timeout occurred
+2024-01-15 10:18:12 WARNING Disk space low
+2024-01-15 10:19:44 INFO Data processed

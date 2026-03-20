@@ -1,0 +1,120 @@
+<section>
+<section id="информация" class="title-slide slide level1">
+<h1>Информация</h1>
+
+</section>
+<section id="докладчик" class="slide level2">
+<h2>Докладчик</h2>
+<ul>
+<li>Пинтаев Максар Баирович</li>
+<li>студент</li>
+<li>Российский университет дружбы народов им. П. Лумумбы</li>
+<li><a href="mailto:1032253534@pfur.ru">1032253534@pfur.ru</a></li>
+<li><a href="https://github.com/maksar-lab"
+class="uri">https://github.com/maksar-lab</a></li>
+</ul>
+</section></section>
+<section>
+<section id="вводная-часть" class="title-slide slide level1">
+<h1>Вводная часть</h1>
+
+</section>
+<section id="актуальность" class="slide level2">
+<h2>Актуальность</h2>
+<ul>
+<li>Современный IT-специалист ежедневно работает с текстовыми
+данными</li>
+<li>Лог-файлы, CSV, конфигурации требуют быстрой обработки</li>
+<li><code>awk</code> — мощный и эффективный инструмент для этих
+задач</li>
+</ul>
+</section>
+<section id="цель-и-задачи" class="slide level2">
+<h2>Цель и задачи</h2>
+<p><strong>Цель:</strong> Изучить возможности утилиты <code>awk</code>
+для обработки текстовых файлов.</p>
+<p><strong>Задачи:</strong> 1. Рассмотреть синтаксис и основные
+конструкции <code>awk</code> 2. Разработать практические примеры
+обработки данных 3. Продемонстрировать эффективность
+<code>awk</code></p>
+</section>
+<section id="материалы-и-методы" class="slide level2">
+<h2>Материалы и методы</h2>
+<ul>
+<li>Операционная система: Fedora Sway</li>
+<li>GNU Awk 5.x</li>
+<li>Тестовые данные: логи, CSV, числовые файлы</li>
+</ul>
+<figure>
+<img data-src="../report/screenshots/01-awk-version.png"
+style="width:70.0%" alt="Версия GNU Awk" />
+<figcaption aria-hidden="true">Версия GNU Awk</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="содержание-исследования" class="title-slide slide level1">
+<h1>Содержание исследования</h1>
+
+</section>
+<section id="что-такое-awk" class="slide level2">
+<h2>Что такое awk?</h2>
+<ul>
+<li>Утилита командной строки для обработки текстовых файлов</li>
+<li>Язык программирования для работы со структурированными данными</li>
+<li>Синтаксис: <code>awk 'условие {действие}' файл</code></li>
+</ul>
+</section>
+<section id="базовый-синтаксис" class="slide level2">
+<h2>Базовый синтаксис</h2>
+<ul>
+<li>Строки автоматически разбиваются на поля</li>
+<li><code>$1</code>, <code>$2</code>, … — доступ к полям</li>
+<li><code>$0</code> — вся строка целиком</li>
+<li><code>NR</code> — номер строки</li>
+<li><code>NF</code> — количество полей</li>
+</ul>
+</section>
+<section id="пример-1.-фильтрация-строк" class="slide level2">
+<h2>Пример 1. Фильтрация строк</h2>
+<p>Вывод только строк, содержащих ошибку:</p>
+<figure>
+<img data-src="../report/screenshots/02-filter-errors.png"
+style="width:70.0%" alt="Вывод" />
+<figcaption aria-hidden="true">Вывод</figcaption>
+</figure>
+<p>Пример 2. Суммирование данных Подсчёт суммы чисел в первом
+столбце:</p>
+<figure>
+<img data-src="../report/screenshots/03-sum-column.png"
+style="width:70.0%" alt="Подсчет" />
+<figcaption aria-hidden="true">Подсчет</figcaption>
+</figure>
+<p>Пример 3. Форматированный вывод Вывод с выравниванием:</p>
+<figure>
+<img data-src="../report/screenshots/04-printf-format.png"
+style="width:70.0%" alt="Вывод" />
+<figcaption aria-hidden="true">Вывод</figcaption>
+</figure>
+<p>Пример 4. Обработка CSV Использование разделителя-запятой:</p>
+<figure>
+<img data-src="../report/screenshots/05-csv-processing.png"
+style="width:70.0%" alt="Использование" />
+<figcaption aria-hidden="true">Использование</figcaption>
+</figure>
+<p>Пример 5. Сложные условия Выбор строк по условию:</p>
+<figure>
+<img data-src="../report/screenshots/06-multi-condition.png"
+style="width:70.0%" alt="Выбор" />
+<figcaption aria-hidden="true">Выбор</figcaption>
+</figure>
+<p>Анализ эффективности Преимущества awk Скорость: потоковая обработка,
+не требует загрузки всего файла в память Простота: компактный синтаксис
+для распространённых задач Гибкость: легко встраивается в конвейеры
+команд</p>
+<p>Заключение Выводы awk — мощный инструмент для обработки текстовых
+данных Позволяет решать широкий круг задач: фильтрация, суммирование,
+форматирование Значительно повышает эффективность работы с текстовыми
+файлами</p>
+<p>Перспективы Изучение встроенных функций awk Использование в сценариях
+системного администрирования Интеграция с grep, sed, sort</p>
+</section></section>
